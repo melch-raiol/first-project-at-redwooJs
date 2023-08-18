@@ -1,9 +1,9 @@
 import { MetaTags } from '@redwoodjs/web'
+
 // import { useState } from 'react';
 import ArticlesCell from 'src/components/ArticlesCell'
 
 const HomePage = () => {
-
   // const [image, setImage] = useState("");
 
   // const uploadImage = async (e) => {
@@ -21,18 +21,10 @@ const HomePage = () => {
     <>
       <MetaTags title="Home" description="Home page" />
 
-      <><ArticlesCell /></>
-      {/* <h1>File Upload</h1>
-      <form onSubmit={uploadImage}>
-        <label>Image:</label>
-        <input
-          type="file"
-          name="image"
-          onChange={(e) => setImage(e.target.files[0])}
-        />
-        <br></br>
-        <button type="submit">Salvar</button>
-      </form> */}
+      <>
+        <ArticlesCell />
+      </>
+      <h1 className="text-red-600">Teste</h1>
     </>
   )
 }
